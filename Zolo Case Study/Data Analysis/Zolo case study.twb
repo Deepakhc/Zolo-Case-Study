@@ -1,0 +1,572 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20181.18.0510.1418                               -->
+<workbook original-version='18.1' source-build='2018.1.1 (20181.18.0510.1418)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet2 (IT near Myna)' inline='true' name='federated.1pulgeu0e1osny17ds5pw0r9e2xo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='IT near Myna' name='excel-direct.0ripm6h0308xmk1dj81jy1a449t2'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Deepak/Desktop/IT near Myna.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0ripm6h0308xmk1dj81jy1a449t2' name='Sheet2' table='[Sheet2$]' type='table'>
+          <columns gridOrigin='A1:C67:no:A1:C67:0' header='no' outcome='2'>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='string' name='F2' ordinal='1' />
+            <column datatype='integer' name='F3' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet2]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C67:no:A1:C67:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>false</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Company Name' datatype='string' name='[F1]' role='dimension' type='nominal' />
+      <column caption='Sector' datatype='string' name='[F2]' role='dimension' type='nominal' />
+      <column caption='Count of Sector' datatype='integer' name='[F3]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column-instance column='[F1]' derivation='None' name='[none:F1:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.500629' measure-ordering='alphabetic' measure-percentage='0.499371' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:F1:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;AXA Business Services private Ltd&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;JCPenney&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Phani information technologies Ltd&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Aditi Technologies&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;HCL Technologies&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Motorola Solutions (Earlier known as Kodiak Networks)&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Tata Consultancy Services&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;AssurePluz&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ibx Soft&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Northern Trust&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Trip Factory&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Cognizant&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;L&amp;T Technology Services&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Rolls-Royce&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;AXA Technologies Shared Services&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Jurimatrix&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Philips&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Atlas Copco&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Indegene Lifesystems&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Nuance Communications&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Ugam Solutions&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Gaea Technologies.&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Mitel&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Target Corporation&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Alcatel-Lucent&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Hudson&apos;s Bay Company&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;NetScout Systems&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Tata Consultancy Services Ltd&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Data Craft India now Dimension Data India&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Mast Global Business services India Pvt Ltd&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Stylus Commercial Services&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Autoliv India&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Inteva Products&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Nvidia&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Voonik Technologies Pvt Ltd&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Colt Technologies&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Legato Health Technologies LLP&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sense Cyber Networks&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Company Name&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Lowe&apos;s&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;SLK Group&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Fidelity Investments&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Microsoft&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Tambora Systems India Pvt Ltd (Earlier known as Sawridge Systems India Pvt Ltd)&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;GlobalFoundries&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Monsanto Holdings&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Target Corporation India&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Capgemini Technology Services India Limited&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Justdial.com&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;QualiTest Group India&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Availity Fore Support Services&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;INVECAS&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;NXP Semiconductors&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Andritz AG&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;i4 Global Information Technologies Ltd&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Network International http://www.network.ae/&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;The Executive Centre&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Concentrix&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Lowe&apos;s Services India Pvt. Ltd&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;STARNEL Consulting and Engineering&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Cerner&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Kinapse&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Redknee&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;ANZ&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;IBM india pvt ltd&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Nokia Networks (Earlier known as NSN or Nokia Siemens Networks)&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;TP Vision&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Arial' fontsize='12'>Type of companies in </run>
+            <run fontcolor='#000000' fontname='Arial' fontsize='12'>Manyata Embassy Business Park, Bangalore </run>
+            <run fontname='Arial' fontsize='12'>Æ </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet2 (IT near Myna)' name='federated.1pulgeu0e1osny17ds5pw0r9e2xo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pulgeu0e1osny17ds5pw0r9e2xo'>
+            <column caption='Company Name' datatype='string' name='[F1]' role='dimension' type='nominal' />
+            <column caption='Sector' datatype='string' name='[F2]' role='dimension' type='nominal' />
+            <column caption='Count of Sector' datatype='integer' name='[F3]' role='measure' type='quantitative' />
+            <column-instance column='[F1]' derivation='None' name='[none:F1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[F2]' derivation='None' name='[none:F2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[F3]' derivation='Sum' name='[sum:F3:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pulgeu0e1osny17ds5pw0r9e2xo].[none:F2:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:F2:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:F2:nk]' member='%null%' />
+                <groupfilter function='member' level='[none:F2:nk]' member='&quot;Sector&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1pulgeu0e1osny17ds5pw0r9e2xo].[none:F2:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pulgeu0e1osny17ds5pw0r9e2xo].[none:F1:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1pulgeu0e1osny17ds5pw0r9e2xo].[sum:F3:qk]</rows>
+        <cols>[federated.1pulgeu0e1osny17ds5pw0r9e2xo].[none:F2:nk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1pulgeu0e1osny17ds5pw0r9e2xo].[none:F1:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <fields>
+                  <field>[federated.1pulgeu0e1osny17ds5pw0r9e2xo].[none:F2:nk]</field>
+                </fields>
+                <multibucket>
+                  <bucket>%null%</bucket>
+                </multibucket>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1pulgeu0e1osny17ds5pw0r9e2xo].[none:F1:nk]</field>
+            <field>[federated.1pulgeu0e1osny17ds5pw0r9e2xo].[none:F2:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      YII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
